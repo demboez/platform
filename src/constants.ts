@@ -1,5 +1,4 @@
 import { PublicKey } from '@solana/web3.js'
-import { FAKE_TOKEN_MINT, PoolToken, TokenMeta, makeHeliusTokenFetcher } from 'gamba-react-ui-v2'
 
 // Get RPC from the .env file or default to the public RPC.
 export const RPC_ENDPOINT = import.meta.env.VITE_RPC_ENDPOINT ?? 'https://api.mainnet-beta.solana.com'
@@ -39,8 +38,6 @@ const lp = (tokenMint: PublicKey | string, poolAuthority?: PublicKey | string): 
  * For private pools, add the creator of the Liquidity Pool as a second argument
  */
 export const POOLS = [
-  // Fake token:
-  lp(FAKE_TOKEN_MINT),
   // SOL:
   lp('So11111111111111111111111111111111111111112'),
   // USDC:
@@ -58,15 +55,6 @@ export const DEFAULT_POOL = POOLS[0]
  * Alternatively, we can provide a fetcher method to automatically fetch metdata. See TOKEN_METADATA_FETCHER below.
  */
 export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
-  {
-    mint: FAKE_TOKEN_MINT,
-    name: 'Fake',
-    symbol: 'FAKE',
-    image: '/fakemoney.png',
-    baseWager: 1e9,
-    decimals: 9,
-    usdPrice: 0,
-  },
   {
     mint: new PublicKey('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
     name: 'W',
