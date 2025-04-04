@@ -124,6 +124,8 @@ export function WelcomeBanner() {
         <button onClick={copyInvite}>
           💸 Copy Invite
         </button>
+        <button onClick={() => window.open('https://connect.solflare.com/', '_blank')}>
+          🚀 Connect Wallet
         </button>
       </Buttons>
     </Welcome>
