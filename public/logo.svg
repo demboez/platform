@@ -1,4 +1,4 @@
-<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="2048" height="2048" viewBox="0 0 1024 1024">
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="4096" height="4096" viewBox="0 0 1024 1024">
   
   <ns0:circle cx="512" cy="512" r="280" fill="#8B0000" stroke="#FFD700" stroke-width="40" />
   <ns0:circle cx="512" cy="512" r="200" fill="black" />
