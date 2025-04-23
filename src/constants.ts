@@ -5,9 +5,7 @@ import { FAKE_TOKEN_MINT, PoolToken, TokenMeta, makeHeliusTokenFetcher } from 'g
 export const RPC_ENDPOINT = import.meta.env.VITE_RPC_ENDPOINT ?? 'https://api.mainnet-beta.solana.com'
 
 // Solana address that will receive fees when somebody plays on this platform
-export const PLATFORM_CREATOR_ADDRESS = new PublicKey(
-  '92v7qzKbFgp4ngTpv6Gs28YXcUEpLGX6jF8oW9Q67Lq7',
-)
+export const PLATFORM_CREATOR_ADDRESS = new PublicKey('92v7qzKbFgp4ngTpv6Gs28YXcUEpLGX6jF8oW9Q67Lq7',)
 
 // Gamba explorer URL - Appears in RecentPlays
 export const EXPLORER_URL = 'https://explorer.gamba.so'
