@@ -87,7 +87,7 @@ export function WelcomeBanner() {
   return (
     <Welcome>
       {/* תמונה מוחלטת ברקע */}
-     <img
+     <img>
        src="/banner.png"
        alt="Banner background"
        style={{
@@ -98,6 +98,7 @@ export function WelcomeBanner() {
          height: '100%',
          objectFit: 'cover',
          zIndex: 0,
+      </img>
        }}
      />
       <div>
