@@ -1,3 +1,31 @@
-<svg width="2048" height="2048" viewBox="0 0 2048 2048" xmlns="http://www.w3.org/2000/svg" version="1.1">
-  <image href="favicon.png" x="0" y="0" width="2048" height="2048" preserveAspectRatio="xMidYMid meet"/>
-</svg>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="2048" height="2048" viewBox="0 0 1024 1024">
+  
+  <ns0:circle cx="512" cy="512" r="280" fill="#8B0000" stroke="#FFD700" stroke-width="40" />
+  <ns0:circle cx="512" cy="512" r="200" fill="black" />
+
+  
+  <ns0:path d="M412,200 L362,350 L312,250 L462,300 L562,250 L662,350 L612,200 Z" fill="#FFD700" stroke="#B8860B" stroke-width="10" />
+  <ns0:circle cx="362" cy="250" r="25" fill="#FFD700" />
+  <ns0:circle cx="512" cy="200" r="25" fill="#FFD700" />
+  <ns0:circle cx="662" cy="250" r="25" fill="#FFD700" />
+
+  
+  <ns0:circle cx="350" cy="400" r="50" fill="#C00000" stroke="white" stroke-width="20" />
+  <ns0:circle cx="300" cy="460" r="50" fill="#C00000" stroke="white" stroke-width="20" />
+
+  
+  <ns0:rect x="350" y="500" width="100" height="160" rx="20" fill="white" stroke="black" stroke-width="8" transform="rotate(-15 400 580)" />
+  <ns0:text x="380" y="580" font-size="80" font-family="Arial" fill="black" transform="rotate(-15 380 580)">A</ns0:text>
+
+  <ns0:rect x="420" y="520" width="100" height="160" rx="20" fill="white" stroke="black" stroke-width="8" transform="rotate(-5 470 600)" />
+  <ns0:text x="450" y="620" font-size="80" font-family="Arial" fill="red" transform="rotate(-5 450 620)">A</ns0:text>
+
+  <ns0:rect x="490" y="540" width="100" height="160" rx="20" fill="white" stroke="black" stroke-width="8" transform="rotate(5 540 620)" />
+  <ns0:text x="520" y="650" font-size="80" font-family="Arial" fill="black" transform="rotate(5 520 650)">A</ns0:text>
+
+  <ns0:rect x="560" y="560" width="100" height="160" rx="20" fill="white" stroke="black" stroke-width="8" transform="rotate(15 610 650)" />
+  <ns0:text x="590" y="680" font-size="80" font-family="Arial" fill="red" transform="rotate(15 590 680)">A</ns0:text>
+
+  
+  <ns0:text x="512" y="900" text-anchor="middle" font-size="100" font-family="Verdana" fill="#FFD700" stroke="black" stroke-width="5">ISRAEL-GAMES</ns0:text>
+</ns0:svg>
