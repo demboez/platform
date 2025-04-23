@@ -16,7 +16,7 @@ export const GAMES: GameBundle[] = [
     id: 'dice',
     meta: {
       background: '#ff6490',
-      name: 'Dice',
+      name: 'קוביות',
       image: '/games/dice.png',
       description: `
         Dice challenges players to predict the outcome of a roll with a unique twist. Select a number and aim to roll below it to win. Adjusting your choice affects potential payouts, balancing risk and reward for an engaging experience.
