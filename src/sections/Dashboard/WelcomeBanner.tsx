@@ -40,19 +40,20 @@ const Buttons = styled.div`
 `
 
 const Welcome = styled.div`
-  position: relative;
-  overflow: hidden;
-
+background: linear-gradient(-45deg, #ffb07c, #ff3e88, #2969ff, #ef3cff, #ff3c87);
+  /* 1. שמים את ה-banner.png בתור רקע ראשון, ואח”כ הגרדיאנט מעליו */
   background:
-    url('/banner.png') no-repeat top right,
+    url('/banner.png') no-repeat center center,
     linear-gradient(-45deg, #ffb07c, #ff3e88, #2969ff, #ef3cff, #ff3c87);
 
+  /* 2. מגדירים גודל לכל רקע בנפרד (ראשון = תמונה, שני = הגרדיאנט) */
   background-size:
-    150px auto,    /* גודל הלוגו */
-    300% 300%;      /* גודל הגרדיאנט */
+    cover,    /* banner.png יתפרס על כל הבלוק */
+    300% 300%;
 
-  animation: backgroundGradient 30s ease infinite;
-  border-radius: 10px;
+   background-size: 300% 300%;
+   animation: welcome-fade-in .5s ease, backgroundGradient 30s ease infinite;
+   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,6 +86,20 @@ export function WelcomeBanner() {
 
   return (
     <Welcome>
+      {/* תמונה מוחלטת ברקע */}
+     <img
+       src="/banner.png"
+       alt="Banner background"
+       style={{
+         position: 'absolute',
+         top: 0,
+         left: 0,
+         width: '100%',
+         height: '100%',
+         objectFit: 'cover',
+         zIndex: 0,
+       }}
+     />
       <div>
         <h1>Israel Games Casino 👋</h1>
         <p>
