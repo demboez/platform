@@ -124,6 +124,9 @@ export function WelcomeBanner() {
         <button onClick={copyInvite}>
           💸 Copy Invite
         </button>
+        <button onClick={t.me/+r3Y957a0aa4wZDU0}>
+          טלגרם
+        </button>
       </Buttons>
     </Welcome>
   )
