@@ -41,7 +41,7 @@ export const GAMES: GameBundle[] = [
     meta: {
       name: 'Flip',
       description: `
-        Flip offers a straightforward yet thrilling gamble: choose Heads or Tails and double your money or lose it all. This simple, high-stakes game tests your luck and decision-making with every flip of the coin.
+        פליפ מציע הימור פשוט אך מסעיר: בחרו עץ או פלי, והכפילו את כספכם – או הפסידו הכל. משחק מהיר ועתיר סיכון, הבוחן את מזלכם ואת יכולת קבלת ההחלטות שלכם בכל הטלת מטבע אחת.
       `,
       image: '/games/flip.png',
       background: '#ffe694',
@@ -54,7 +54,7 @@ export const GAMES: GameBundle[] = [
       name: 'HiLo',
       image: '/games/hilo.png',
       description: `
-        HiLo is a game of foresight and luck, challenging players to guess whether the next card will be higher or lower. Make consecutive correct guesses to increase your winnings, and decide when to cash out for maximum rewards.
+        גבוה או נמוך הוא משחק של ראיית הנולד ומזל, המאתגר את השחקנים לנחש האם הקלף הבא יהיה גבוה יותר או נמוך יותר. בצעו רצף של ניחושים נכונים כדי להגדיל את זכייתכם, והחליטו מתי לעצור ולפדות את הרווחים בשיאם.
       `,
       background: '#ff4f4f',
     },
@@ -66,7 +66,7 @@ export const GAMES: GameBundle[] = [
     meta: {
       name: 'Mines',
       description: `
-        There's money hidden beneath the squares. The reward will increase the more squares you reveal, but watch out for the 5 hidden mines. Touch one and you'll go broke. You can cash out at any time.
+        מתחת לריבועים מסתתר כסף. ככל שתחשפו יותר ריבועים, סכום הפרס יגדל – אבל היזהרו מחמש המוקשים החבויים. אם תפגעו באחד מהם, תאבדו הכל. תוכלו לפדות את הזכייה בכל רגע שתרצו.
       `,
       image: '/games/mines.png',
       background: '#8376ff',
@@ -79,7 +79,7 @@ export const GAMES: GameBundle[] = [
       name: 'Roulette',
       image: '/games/roulette.png',
       description: `
-        Roulette brings the classic wheel-spinning game to life with a digital twist. Bet on where the ball will land and watch as the wheel decides your fate. With straightforward rules and the chance for big wins, Roulette is a timeless game of chance.
+        רולטה מחייה את משחק סיבוב הגלגל הקלאסי עם טאץ' דיגיטלי מודרני. הימרו על היכן שהכדור ייעצר וצפו כיצד הגלגל קובע את גורלכם. עם חוקים פשוטים והזדמנות לזכיות גדולות, רולטה היא משחק מזל על-זמני.
       `,
       background: '#1de87e',
     },
@@ -92,8 +92,8 @@ export const GAMES: GameBundle[] = [
       image: '/games/plinko.png',
       name: 'Plinko',
       description: `
-        Plinko is played by dropping chips down a pegged board where they randomly fall into slots with varying win amounts. Each drop is a mix of anticipation and strategy, making Plinko an endlessly entertaining game of chance.
-        ⚠️ Under development. Results shown might be incorrect. ⚠️
+       פינקו הוא משחק שבו מטילים דיסקיות על לוח עם יתדות, והן נופלות באופן אקראי לחריצים עם סכומי זכייה משתנים. כל הטלה משלבת מתח ואסטרטגיה, מה שהופך את פינקו למשחק מזל מהנה וממכר.
+⚠️ נמצא בפיתוח. ייתכן שהתוצאות המוצגות אינן נכונות. ⚠️
       `,
     },
     app: React.lazy(() => import('./Plinko')),
@@ -105,7 +105,7 @@ export const GAMES: GameBundle[] = [
       image: '/games/crash.png',
       name: 'Crash',
       description: `
-      Predict a multiplier target and watch a rocket attempt to reach it. If the rocket crashes before the target, the player loses; if it reaches or exceeds the target, the player wins.
+      המריאו אל עבר הזכייה: נבא את יעד המכפיל וצפה בטיל שועט לשמים. אם הטיל יגיע ליעד או יפרוץ אותו – תזכה בפרס הגדול. אך אם יתרסק לפני כן – תאבד את ההימור. האם תדע מתי להמר ומתי לעצור? משחק של אומץ, מתח וזכיות מסחררות.
       `,
     },
     app: React.lazy(() => import('./CrashGame')),
@@ -117,7 +117,7 @@ export const GAMES: GameBundle[] = [
       image: '/games/blackjack.png',
       name: 'BlackJack',
       description: `
-        A simplified blackjack game where you and the dealer each get two cards. Win 2.5x your wager with a blackjack (21 with two cards), or 2x if your total beats the dealer's without exceeding 21. Ties or lower totals result in a loss. Enjoy quick gameplay without the usual complexities.
+        בלאקג'ק במהדורה אלגנטית ומהירה: אתה והדילר מקבלים שני קלפים בלבד. השג בלאקג'ק טהור (21 בשני קלפים) וזכה פי 2.5 מההימור, או הכה את הדילר מבלי לעבור את 21 כדי להכפיל את זכייתך. תיקו או תוצאה נמוכה יותר יובילו להפסד. חוויית קזינו קלאסית, בקצב מהיר וללא סיבוכים
       `,
     },
     app: React.lazy(() => import('./BlackJack')),
