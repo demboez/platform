@@ -14,7 +14,7 @@ export const EXPLORER_URL = 'https://explorer.gamba.so'
 export const PLATFORM_SHARABLE_URL = 'play.gamba.so'
 
 // Creator fee (in %)
-export const PLATFORM_CREATOR_FEE = 0.01 // 1% !!max 5%!!
+export const PLATFORM_CREATOR_FEE = 4 // 1% !!max 5%!!
 
 // Jackpot fee (in %)
 export const PLATFORM_JACKPOT_FEE = 0.001 // 0.1%
