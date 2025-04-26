@@ -31,7 +31,7 @@ export const GAMES: GameBundle[] = [
       name: 'Slots',
       image: '/games/slots.png',
       description: `
-        Slots is the quintessential game of luck and anticipation. Spin the reels and match symbols to win, with potential rewards displayed upfront. A fair and exciting game, Slots offers a classic casino experience tailored for digital enjoyment.
+        מכונות המזל הן התגלמות המזל וההתרגשות. סובבו את הסלילים, התאימו סמלים וזכו בפרסים, כאשר כל הזכיות האפשריות מוצגות בצורה ברורה מראש. זהו משחק הוגן, מהנה וסוחף, שמביא את חוויית הקזינו הקלאסית ישירות אל העולם הדיגיטלי.
       `,
     },
     app: React.lazy(() => import('./Slots')),
