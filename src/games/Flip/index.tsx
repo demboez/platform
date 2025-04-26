@@ -113,7 +113,7 @@ function Flip() {
           </div>
         </GambaUi.Button>
         <GambaUi.PlayButton onClick={play}>
-          Flip
+          שחק
         </GambaUi.PlayButton>
       </GambaUi.Portal>
     </>
