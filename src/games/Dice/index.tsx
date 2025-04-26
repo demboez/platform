@@ -91,11 +91,11 @@ export default function Dice() {
             <Stats>
               <div>
                 <div>{(rollUnderIndex / 100 * 100).toFixed(0)}%</div>
-                <div>Win Chance</div>
+                <div>סיכוי זכייה</div>
               </div>
               <div>
                 <div>{multiplier.toFixed(2)}x</div>
-                <div>Multiplier</div>
+                <div>מכפיל</div>
               </div>
               <div>
                 {maxWin > pool.maxPayout ? (
@@ -103,7 +103,7 @@ export default function Dice() {
                 ) : (
                   <div><TokenValue suffix="" amount={maxWin} /></div>
                 )}
-                <div>Payout</div>
+                <div>סכום זכייה</div>
               </div>
             </Stats>
             <div style={{ position: 'relative' }}>
@@ -129,7 +129,7 @@ export default function Dice() {
       </GambaUi.Portal>
       <GambaUi.Portal target="controls">
         <GambaUi.WagerInput value={wager} onChange={setWager} />
-        <GambaUi.PlayButton onClick={play}>Roll</GambaUi.PlayButton>
+        <GambaUi.PlayButton onClick={play}>שחק</GambaUi.PlayButton>
       </GambaUi.Portal>
     </>
   )
