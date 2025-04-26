@@ -189,7 +189,7 @@ export default function Blackjack(props: BlackjackConfig) {
         <GambaUi.Responsive>
           <Container $disabled={claiming || gamba.isPlaying}>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-              <h2>Dealer's Hand</h2>
+              <h2>קלפי הדילר</h2>
               <CardArea>
                 <CardsContainer>
                   {dealerCards.map((card) => (
@@ -202,7 +202,7 @@ export default function Blackjack(props: BlackjackConfig) {
                   ))}
                 </CardsContainer>
               </CardArea>
-              <h2>Player's Hand</h2>
+              <h2>הקלפים שלך</h2>
               <CardArea>
                 <CardsContainer>
                   {playerCards.map((card) => (
@@ -222,7 +222,7 @@ export default function Blackjack(props: BlackjackConfig) {
                       <TokenValue amount={profit} /> +{Math.round((profit / initialWager) * 100 - 100)}%
                     </>
                   ) : (
-                    <>You Lost</>
+                    <>הפסדת!</>
                   )}
                 </Profit>
               )}
@@ -233,7 +233,7 @@ export default function Blackjack(props: BlackjackConfig) {
       <GambaUi.Portal target="controls">
         <>
           <GambaUi.WagerInput value={initialWager} onChange={setInitialWager} />
-          <GambaUi.PlayButton onClick={play}>Deal Cards</GambaUi.PlayButton>
+          <GambaUi.PlayButton onClick={play}>שחק</GambaUi.PlayButton>
         </>
       </GambaUi.Portal>
     </>
