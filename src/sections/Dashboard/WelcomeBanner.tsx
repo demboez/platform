@@ -115,7 +115,7 @@ export function WelcomeBanner() {
   return (
     <Welcome>
       <div>
-        <h1>Israel Games Casino 👋</h1>
+        <h1>Israel Games Casino</h1>
       </div>
       <Buttons>
         <button onClick={copyInvite}>
