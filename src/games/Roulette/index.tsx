@@ -55,13 +55,13 @@ function Stats() {
             <TokenValue amount={wager} />
           </>
         )}
-        <div>Wager</div>
+        <div>סכום הימור</div>
       </div>
       <div>
         <div>
           {maxPayoutExceeded ? (
             <span style={{ color: '#ff0066' }}>
-              TOO HIGH
+              גבוה מידי
             </span>
           ) : (
             <>
@@ -70,7 +70,7 @@ function Stats() {
             </>
           )}
         </div>
-        <div>Potential win</div>
+        <div>סכום זכייה צפוי</div>
       </div>
     </div>
   )
@@ -137,10 +137,10 @@ export default function Roulette() {
           disabled={!wager || gamba.isPlaying}
           onClick={clearChips}
         >
-          Clear
+          נקה
         </GambaUi.Button>
         <GambaUi.PlayButton disabled={!wager || balanceExceeded || maxPayoutExceeded} onClick={play}>
-          Spin
+          שחק
         </GambaUi.PlayButton>
       </GambaUi.Portal>
     </>
