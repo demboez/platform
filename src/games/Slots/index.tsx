@@ -185,13 +185,13 @@ export default function Slots() {
                 ) : isValid ? (
                   <Messages
                     messages={[
-                      'SPIN ME!',
+                      'סובב אותי!',
                       'FEELING LUCKY?',
                     ]}
                   />
                 ) : (
                   <>
-                    ❌ Choose a lower wager!
+                    ❌ בחר סכום הימור נמוך יותר!
                   </>
                 )}
               </div>
