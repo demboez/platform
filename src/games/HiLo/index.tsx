@@ -162,7 +162,7 @@ export default function HiLo(props: HiLoConfig) {
                   <div>
                     👆
                   </div>
-                  <div>HI - ({Math.max(...betHi).toFixed(2)}x)</div>
+                  <div>גבוה - ({Math.max(...betHi).toFixed(2)}x)</div>
                 </Option>
                 <Option
                   selected={option === 'lo'}
@@ -173,7 +173,7 @@ export default function HiLo(props: HiLoConfig) {
                   <div>
                     👇
                   </div>
-                  <div>LO - ({Math.max(...betLo).toFixed(2)}x)</div>
+                  <div>נמוך - ({Math.max(...betLo).toFixed(2)}x)</div>
                 </Option>
               </Options>
             </div>
@@ -203,7 +203,7 @@ export default function HiLo(props: HiLoConfig) {
               onChange={setInitialWager}
             />
             <GambaUi.PlayButton disabled={!option || initialWager > maxWagerForBet} onClick={play}>
-              Deal card
+              שחק
             </GambaUi.PlayButton>
             {initialWager > maxWagerForBet && (
               <GambaUi.Button onClick={() => setInitialWager(maxWagerForBet)}>
@@ -215,10 +215,10 @@ export default function HiLo(props: HiLoConfig) {
           <>
             <TokenValue amount={wager} />
             <GambaUi.Button disabled={gamba.isPlaying} onClick={resetGame}>
-              Finish
+              סיים
             </GambaUi.Button>
             <GambaUi.PlayButton disabled={!option} onClick={play}>
-              Deal card
+              שחק
             </GambaUi.PlayButton>
           </>
         )}
