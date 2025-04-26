@@ -19,7 +19,7 @@ export const GAMES: GameBundle[] = [
       name: 'קוביות',
       image: '/games/dice.png',
       description: `
-        Dice challenges players to predict the outcome of a roll with a unique twist. Select a number and aim to roll below it to win. Adjusting your choice affects potential payouts, balancing risk and reward for an engaging experience.
+        "משחק הקובייה מאתגר את השחקנים לנחש את תוצאת ההטלה עם טוויסט ייחודי. בחר מספר ושאף לגלגל תוצאה נמוכה ממנו כדי לנצח. שינוי הבחירה שלך משפיע על סכום הזכייה הפוטנציאלי, ומאזן בין סיכון לתגמול לחוויית משחק מרתקת."
       `,
     },
     app: React.lazy(() => import('./Dice')),
