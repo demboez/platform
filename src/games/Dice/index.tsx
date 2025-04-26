@@ -85,7 +85,7 @@ export default function Dice() {
             <RollUnder>
               <div>
                 <div>{rollUnderIndex + 1}</div>
-                <div>Roll Under</div>
+                <div>גלגל מתחת</div>
               </div>
             </RollUnder>
             <Stats>
