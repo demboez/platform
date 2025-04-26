@@ -121,12 +121,9 @@ export function WelcomeBanner() {
         <button onClick={copyInvite}>
           💸 Copy Invite
         </button>
-        <a href="https://t.me/israelgamesbot" target="_blank" rel="noopener noreferrer">
-  <button style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" style={{ width: '20px', height: '20px' }} />
-    Telegram
-  </button>
-</a>
+ <button onClick={() => window.location.href = 'https://t.me/israelgamesbot'}>
+  💸 Telegram
+</button>
       </Buttons>
     </Welcome>
   )
