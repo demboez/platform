@@ -115,6 +115,7 @@ export function WelcomeBanner() {
   return (
     <Welcome>
       <div>
+        <img src="/logo.jpg" alt="Casino Logo" />
         <h1>Israel Games Casino 👋</h1>
         <p>
           A fair, simple and decentralized casino on Solana.
