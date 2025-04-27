@@ -112,7 +112,7 @@ export default function CrashGame() {
           onChange={setMultiplierTarget}
         />
         <GambaUi.PlayButton onClick={play}>
-          Play
+          שחק
         </GambaUi.PlayButton>
       </GambaUi.Portal>
     </>
