@@ -174,8 +174,8 @@ export default function Slots() {
                 {spinning ? (
                   <Messages
                     messages={[
-                      'Spinning!',
-                      'Good luck',
+                      'מסתובב',
+                      'בהצלחה',
                     ]}
                   />
                 ) : result ? (
@@ -185,8 +185,8 @@ export default function Slots() {
                 ) : isValid ? (
                   <Messages
                     messages={[
-                      'סובב אותי!',
-                      'FEELING LUCKY?',
+                      '!סובב אותי',
+                      '?בא לך לנסות את מזלך',
                     ]}
                   />
                 ) : (
@@ -202,7 +202,7 @@ export default function Slots() {
       <GambaUi.Portal target="controls">
         <GambaUi.WagerInput value={wager} onChange={setWager} />
         <GambaUi.PlayButton disabled={!isValid} onClick={play}>
-          Spin
+          שחק
         </GambaUi.PlayButton>
       </GambaUi.Portal>
     </>
