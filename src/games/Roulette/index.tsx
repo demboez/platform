@@ -48,7 +48,7 @@ function Stats() {
       <div>
         {balanceExceeded ? (
           <span style={{ color: '#ff0066' }}>
-            TOO HIGH
+            גבוה מידי
           </span>
         ) : (
           <>
