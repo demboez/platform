@@ -37,18 +37,6 @@ export const GAMES: GameBundle[] = [
     app: React.lazy(() => import('./Slots')),
   },
   {
-    id: 'flip',
-    meta: {
-      name: 'Flip',
-      description: `
-        פליפ מציע הימור פשוט אך מסעיר: בחרו עץ או פלי, והכפילו את כספכם – או הפסידו הכל. משחק מהיר ועתיר סיכון, הבוחן את מזלכם ואת יכולת קבלת ההחלטות שלכם בכל הטלת מטבע אחת.
-      `,
-      image: '/games/flip.png',
-      background: '#ffe694',
-    },
-    app: React.lazy(() => import('./Flip')),
-  },
-  {
     id: 'hilo',
     meta: {
       name: 'HiLo',
