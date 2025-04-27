@@ -119,10 +119,10 @@ export function WelcomeBanner() {
       </div>
       <Buttons>
         <button onClick={copyInvite}>
-          💸 Copy Invite
+          💸 חבר מביא חבר
         </button>
  <button onClick={() => window.location.href = 'https://t.me/israelgamesbot'}>
-   Telegram
+   טלגרם
 </button>
       </Buttons>
     </Welcome>
