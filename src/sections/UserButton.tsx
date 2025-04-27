@@ -20,7 +20,7 @@ function UserModal() {
     try {
       referral.copyLinkToClipboard()
       toast({
-        title: '📋 Copied to clipboard',
+        title: '📋 הועתק ללוח',
         description: 'Your referral code has been copied!',
       })
     } catch {
@@ -45,10 +45,10 @@ function UserModal() {
       <div style={{ display: 'flex', gap: '20px', flexDirection: 'column', width: '100%', padding: '0 20px' }}>
         <div style={{ display: 'flex', gap: '10px', flexDirection: 'column', width: '100%' }}>
           <GambaUi.Button main onClick={copyInvite}>
-            💸 Copy invite link
+            💸 העתקת קוד הזמנה
           </GambaUi.Button>
           <div style={{ opacity: '.8', fontSize: '80%' }}>
-            Share your link with new users to earn {(PLATFORM_REFERRAL_FEE * 100)}% every time they play on this platform.
+            שתף את הקישור שלך עם משתמשים חדשים ותרוויח {(PLATFORM_REFERRAL_FEE * 100)}% בכל פעם שהם משחקים בפלטפורמה הזו.
           </div>
         </div>
         {PLATFORM_ALLOW_REFERRER_REMOVAL && referral.recipient && (
@@ -57,12 +57,12 @@ function UserModal() {
               Revoke invite
             </GambaUi.Button>
             <div style={{ opacity: '.8', fontSize: '80%' }}>
-              You were invited by <a target="_blank" href={`https://solscan.io/account/${referral.recipient.toString()}`} rel="noreferrer">{referral.recipient.toString()}</a>
+              הוזמנת על ידי <a target="_blank" href={`https://solscan.io/account/${referral.recipient.toString()}`} rel="noreferrer">{referral.recipient.toString()}</a>
             </div>
           </div>
         )}
         <GambaUi.Button onClick={() => wallet.disconnect()}>
-          Disconnect
+          התנתקות
         </GambaUi.Button>
       </div>
     </Modal>
