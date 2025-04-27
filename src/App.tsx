@@ -31,7 +31,7 @@ function ErrorHandler() {
         walletModal.setVisible(true)
         return
       }
-      toast({ title: '❌ Transaction error', description: error.error?.errorMessage ?? error.message })
+      toast({ title: '❌ שגיאת רכישה', description: error.error?.errorMessage ?? error.message })
     },
   )
 
@@ -60,10 +60,10 @@ export default function App() {
             <TosInner dangerouslySetInnerHTML={{ __html: TOS_HTML }} />
           </TosWrapper>
           <p>
-            By playing on our platform, you confirm your compliance.
+            על ידי משחק בפלטפורמה שלנו, אתה מאשר את עמידתך בתנאים.
           </p>
           <GambaUi.Button main onClick={() => set({ newcomer: false })}>
-            Acknowledge
+            אני מאשר
           </GambaUi.Button>
         </Modal>
       )}
