@@ -121,7 +121,7 @@ export function WelcomeBanner() {
         <button onClick={copyInvite}>
           💸 חבר מביא חבר
         </button>
- <button onClick={() => window.location.href = 'https://t.me/+cwjC3op18bBhMzJk'}>
+ <button onClick={() => window.location.href = 'https://t.me/israelgamesbot'}>
    טלגרם
 </button>
       </Buttons>
