@@ -13,6 +13,7 @@ import Header from './sections/Header'
 import RecentPlays from './sections/RecentPlays/RecentPlays'
 import Toasts from './sections/Toasts'
 import { MainWrapper, TosInner, TosWrapper } from './styles'
+import { Analytics } from "@vercel/analytics/react";
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -79,6 +80,12 @@ export default function App() {
         <h2 style={{ textAlign: 'center' }}>Recent Plays</h2>
         <RecentPlays />
       </MainWrapper>
+    </>
+  )
+}
+
+{/* 👇 כאן הוספתי את ה-Analytics בסוף */}
+      <Analytics />
     </>
   )
 }
