@@ -100,7 +100,7 @@ export function UserButton() {
         </div>
       ) : (
         <GambaUi.Button onClick={connect}>
-          {wallet.connecting ? 'מתחבר' : 'התחבר'}
+          {wallet.connecting ? 'מתחבר' : 'התחברות'}
         </GambaUi.Button>
       )}
     </>
